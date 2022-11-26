@@ -1,35 +1,30 @@
 <script>
 	export let data;
-	$: missions = data.missions.launchesPast;
+	$: ships = data.space.ships;
 </script>
 
 <div class="wrapper">
 	<header class="page-header">
-		<h1>SpaceX Missions</h1>
+		<h1>SpaceX Ships</h1>
 	</header>
 	<div class="grid">
-		{#each missions as mission}
+		{#each ships as ship}
 			<article>
-				<header>
-					<h2>{mission.mission_name}</h2>
-				</header>
+				<h2>{ship.name}</h2>
 
-				<div class="flex">
-					<p>{new Date(Date.parse(mission.launch_date_local))}</p>
-					<p>{mission.rocket.rocket_name}</p>
-				</div>
-				{#if mission.links.mission_patch}
-					<img src={mission.links.mission_patch} alt={mission.mission_name} />
+				{#if ship.image}
+					<img src={ship.image} alt={ship.name} />
 				{:else}
 					<img
 						src="https://res.cloudinary.com/tihos/image/upload/v1669412174/logo_y0u8lu.png"
 						alt="SpaceX Logo"
 					/>
 				{/if}
+
 				<div class="flex">
-					<a href={mission.links.video_link}>YouTube Link</a>
-					<a href={mission.links.article_link}>Article Link</a>
-					<a href={mission.links.wikipedia}>Wikipedia Link</a>
+					{#each ship.missions as mission}
+						<p>{mission.name}</p>
+					{/each}
 				</div>
 			</article>
 		{/each}

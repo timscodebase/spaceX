@@ -17,7 +17,7 @@
 }
 
 body {
-  background: var(--background-grad);
+  background: var(--background-grad) fixed;
   color: var(--white);
 }
 

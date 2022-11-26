@@ -30,16 +30,13 @@
 		display: grid;
 		place-items: center;
 	}
+
 	h2 {
 		text-align: center;
 	}
 
 	article {
 		max-width: 800px;
-	}
-
-	a {
-		background: #fff3;
 	}
 
 	.customers {
