@@ -16,7 +16,7 @@
 					<img src={ship.image} alt={ship.name} />
 				{:else}
 					<img
-						src="https://res.cloudinary.com/tihos/image/upload/v1669412174/logo_y0u8lu.png"
+						src="https://res.cloudinary.com/tihos/image/upload/f_auto,q_auto/v1669412174/logo_y0u8lu.png"
 						alt="SpaceX Logo"
 					/>
 				{/if}
