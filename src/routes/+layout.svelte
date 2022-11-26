@@ -33,6 +33,7 @@
 <style>
 	.wrapper {
 		position: relative;
+		widows: 100vw;
 	}
 
 	.menu {

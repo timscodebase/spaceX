@@ -95,6 +95,12 @@
 		padding-bottom: 2rem;
 	}
 
+	@media (max-width: 600px) {
+		.grid {
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		}
+	}
+
 	button {
 		background: #0005;
 		border: none;

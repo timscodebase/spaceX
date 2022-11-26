@@ -25,6 +25,12 @@ p {
   font-size: 2rem;
 }
 
+@media (width<=768px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
 a {
   cursor: pointer;
   background: var(--black-50);
