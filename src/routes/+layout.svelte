@@ -41,10 +41,12 @@
 		right: 0;
 		z-index: 9999;
 		padding: 2rem 4rem;
+		background-color: #0000005b;
 	}
 
 	a {
 		display: block;
+		background: none;
 	}
 
 	footer {
