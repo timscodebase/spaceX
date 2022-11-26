@@ -1,0 +1,47 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --black-50: rgba(0, 0, 0, 0.5);
+  --red: rgb(255, 85, 0);
+  --red-50: rgba(255, 85, 0, 0.5);
+
+  --background: var(--black);
+  --forground: var(--white);
+  --highlight: var(--red);
+
+  --top: 150px;
+
+  --bg-image: url('https://res.cloudinary.com/tihos/image/upload/v1669412465/space_m1b5qp.jpg');
+  --bg-gradient: linear-gradient(to bottom, rgba(71, 1, 54, 0.73), rgba(0, 19, 129, 0.52));
+  --background-grad: var(--bg-gradient), var(--bg-image);
+}
+
+body {
+  background: var(--background-grad);
+  color: var(--white);
+}
+
+p {
+  font-size: 2rem;
+}
+
+a {
+  cursor: pointer;
+  background: var(--black-50);
+  padding: 0.7rem 1rem;
+  color: var(--forground);
+  border-radius: 100vw;
+}
+
+a:hover {
+  background: var(--red-50);
+  color: var(--forground);
+}
+
+.hamburger {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 100;
+  z-index: 100;
+}
