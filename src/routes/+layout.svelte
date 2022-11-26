@@ -1,8 +1,12 @@
 <script lang="ts">
-	import { page } from '$app/stores';
+	import { onMount } from 'svelte';
 	import { Hamburger } from 'svelte-hamburgers';
 
 	let open: boolean = false;
+
+	const handleClick = () => {
+		open = !open;
+	};
 </script>
 
 <div class="wrapper">
@@ -12,10 +16,10 @@
 
 	{#if open}
 		<div class="menu">
-			<a href="/">Home</a>
-			<a href="/ships">Ships</a>
-			<a href="/missions">Missions</a>
-			<a href="/roadster">Roadster</a>
+			<a on:click={handleClick} href="/">Home</a>
+			<a on:click={handleClick} href="/ships">Ships</a>
+			<a on:click={handleClick} href="/missions">Missions</a>
+			<a on:click={handleClick} href="/roadster">Roadster</a>
 		</div>
 	{/if}
 
@@ -35,10 +39,12 @@
 		position: fixed;
 		top: 5rem;
 		right: 0;
-		background: rgba(0, 0, 0, 0.33);
-		display: flex;
-		gap: 1rem;
 		z-index: 9999;
+		padding: 2rem 4rem;
+	}
+
+	a {
+		display: block;
 	}
 
 	footer {
