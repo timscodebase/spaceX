@@ -38,11 +38,15 @@
 
 	.menu {
 		position: fixed;
-		top: 5rem;
+		top: 0rem;
 		right: 0;
+		left: 0;
+		bottom: 0;
 		z-index: 9999;
 		padding: 2rem 4rem;
-		background-color: #0000005b;
+		background-color: #000000;
+		display: grid;
+		place-content: center;
 	}
 
 	a {
