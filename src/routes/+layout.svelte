@@ -47,6 +47,7 @@
 		background-color: #000000;
 		display: grid;
 		place-content: center;
+		font-size: 2.5rem;
 	}
 
 	a {

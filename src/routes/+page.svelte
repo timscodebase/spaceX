@@ -37,6 +37,7 @@
 
 	article {
 		max-width: 800px;
+		padding: 2rem;
 	}
 
 	.customers {
@@ -48,6 +49,15 @@
 		font-size: 2rem;
 		background: var(--bg-gradient);
 		color: var(--foreground);
+	}
+
+	@media (max-width: 600px) {
+		h2 {
+			font-size: 2rem;
+		}
+		.customers {
+			font-size: 1.5rem;
+		}
 	}
 
 	span {
