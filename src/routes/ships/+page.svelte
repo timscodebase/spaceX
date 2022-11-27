@@ -33,7 +33,7 @@
 
 <style>
 	.wrapper {
-		padding: 2rem;
+		padding: var(--padding);
 		background-attachment: fixed;
 		background-size: cover;
 		margin-top: var(--top);
@@ -41,7 +41,7 @@
 
 	article {
 		background: #0005;
-		padding: 2rem;
+		padding: var(--padding);
 		border-radius: 2rem;
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	}

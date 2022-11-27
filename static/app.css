@@ -14,6 +14,15 @@
   --bg-image: url('https://res.cloudinary.com/tihos/image/upload/f_auto,q_auto/v1669412465/space_m1b5qp.jpg');
   --bg-gradient: linear-gradient(to bottom, rgba(71, 1, 54, 0.73), rgba(0, 19, 129, 0.52));
   --background-grad: var(--bg-gradient), var(--bg-image);
+
+  --padding: 2rem;
+
+}
+
+@media (max-width: 768px) {
+  :root {
+    --padding: 1rem;
+  }
 }
 
 body {

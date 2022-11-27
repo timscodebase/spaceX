@@ -37,12 +37,12 @@
 
 	article {
 		max-width: 800px;
-		padding: 2rem;
+		padding: var(--padding);
 	}
 
 	.customers {
 		/* margin-top: 3rem; */
-		padding: 2rem;
+		padding: var(--padding);
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
