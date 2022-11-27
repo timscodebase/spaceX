@@ -123,12 +123,6 @@
 		padding: 2rem;
 	}
 
-	/* img {
-		width: 100%;
-		margin: 0 auto;
-		height: auto;
-	} */
-
 	.page-header {
 		display: flex;
 		align-items: center;

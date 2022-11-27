@@ -27,9 +27,15 @@
 					/>
 				{/if}
 				<div class="flex">
-					<a href={mission.links.video_link}>YouTube Link</a>
-					<a href={mission.links.article_link}>Article Link</a>
-					<a href={mission.links.wikipedia}>Wikipedia Link</a>
+					<a href={mission.links.video_link} target="_blank" rel="noopener noreferrer"
+						>YouTube Link</a
+					>
+					<a href={mission.links.article_link} target="_blank" rel="noopener noreferrer"
+						>Article Link</a
+					>
+					<a href={mission.links.wikipedia} target="_blank" rel="noopener noreferrer"
+						>Wikipedia Link</a
+					>
 				</div>
 			</article>
 		{/each}
@@ -64,15 +70,9 @@
 		display: flex;
 		flex-wrap: wrap;
 		gap: 1rem;
-		justify-content: space-between;
+		justify-content: space-around;
 		align-items: center;
 		padding: 1rem 0;
-	}
-
-	img {
-		width: 100%;
-		margin: 0 auto;
-		height: auto;
 	}
 
 	p {

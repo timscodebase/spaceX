@@ -26,7 +26,7 @@
 	<div><slot /></div>
 
 	<footer>
-		<p>Created with ❤️ by <a href="https://timsmith.tech">Tim Smith</a></p>
+		<p>Created with ❤️ by <a class="footer-link" href="https://timsmith.tech">Tim Smith</a></p>
 	</footer>
 </div>
 
@@ -48,6 +48,10 @@
 	a {
 		display: block;
 		background: none;
+	}
+
+	.footer-link {
+		display: inline-block;
 	}
 
 	footer {

@@ -39,15 +39,6 @@
 		margin-top: var(--top);
 	}
 
-	.grid {
-		max-width: 1200px;
-		min-height: 100vh;
-		margin: 0 auto;
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		gap: 2rem;
-	}
-
 	article {
 		background: #0005;
 		padding: 2rem;
@@ -62,12 +53,6 @@
 		justify-content: space-between;
 		align-items: center;
 		padding: 1rem 0;
-	}
-
-	img {
-		width: 100%;
-		margin: 0 auto;
-		height: auto;
 	}
 
 	p {
