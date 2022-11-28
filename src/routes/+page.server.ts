@@ -6,7 +6,7 @@ const launchNextQuery = gql`
     launchNext {
       details
       links {
-        mission_patch
+        mission_patch_small
       }
     }
   }

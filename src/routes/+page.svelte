@@ -17,7 +17,7 @@
 
 	<article>
 		<h2>Next Mission</h2>
-		<img src={nextLaunch.links.mission_patch} alt="The patch of the next Mission" />
+		<img src={nextLaunch.links.mission_patch_small} alt="The patch of the next Mission" />
 		<p>{nextLaunch.details}</p>
 	</article>
 

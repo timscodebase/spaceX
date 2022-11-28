@@ -10,7 +10,7 @@ const query = gql`
         article_link
         video_link
         wikipedia
-        mission_patch
+        mission_patch_small
       }
       rocket {
         rocket_name

@@ -16,8 +16,8 @@
 				<div class="content">
 					<p><strong>Rocket Name:</strong> {mission.rocket.rocket_name}</p>
 
-					{#if mission.links.mission_patch}
-						<img src={mission.links.mission_patch} alt={mission.mission_name} />
+					{#if mission.links.mission_patch_small}
+						<img src={mission.links.mission_patch_small} alt={mission.mission_name} />
 					{:else}
 						<img
 							src="https://res.cloudinary.com/tihos/image/upload/f_auto,q_auto/v1669412174/logo_y0u8lu.png"
