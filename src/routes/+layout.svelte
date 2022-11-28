@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { Hamburger } from 'svelte-hamburgers';
-	import Analytics from '$lib/analytics.svelte';
 
 	let open: boolean = false;
 
@@ -30,8 +29,6 @@
 		<p>Created with ❤️ by <a class="footer-link" href="https://timsmith.tech">Tim Smith</a></p>
 	</footer>
 </div>
-
-<Analytics />
 
 <style>
 	.wrapper {
