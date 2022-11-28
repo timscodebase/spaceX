@@ -13,19 +13,19 @@
 				<header>
 					<h2>{mission.mission_name}</h2>
 				</header>
+				<div class="content">
+					<p><strong>Rocket Name:</strong> {mission.rocket.rocket_name}</p>
 
-				<div class="flex">
-					<p>{new Date(Date.parse(mission.launch_date_local))}</p>
-					<p>{mission.rocket.rocket_name}</p>
+					{#if mission.links.mission_patch}
+						<img src={mission.links.mission_patch} alt={mission.mission_name} />
+					{:else}
+						<img
+							src="https://res.cloudinary.com/tihos/image/upload/f_auto,q_auto/v1669412174/logo_y0u8lu.png"
+							alt="SpaceX Logo"
+						/>
+					{/if}
+					<p>{mission.details}</p>
 				</div>
-				{#if mission.links.mission_patch}
-					<img src={mission.links.mission_patch} alt={mission.mission_name} />
-				{:else}
-					<img
-						src="https://res.cloudinary.com/tihos/image/upload/f_auto,q_auto/v1669412174/logo_y0u8lu.png"
-						alt="SpaceX Logo"
-					/>
-				{/if}
 				<div class="flex">
 					<a href={mission.links.video_link} target="_blank" rel="noopener noreferrer"
 						>YouTube Link</a
@@ -56,26 +56,27 @@
 		margin: 0 auto;
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		gap: 2rem;
+		gap: 1rem;
 	}
 
 	article {
 		background: #0005;
 		padding: var(--padding);
-		border-radius: 2rem;
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		border-radius: 1rem;
 	}
 
 	.flex {
+		border-top: 4px dotted #fff;
 		display: flex;
 		flex-wrap: wrap;
 		gap: 1rem;
 		justify-content: space-around;
 		align-items: center;
-		padding: 1rem 0;
+		padding: 2rem 0 0 0;
 	}
 
 	p {
+		padding-top: 2rem;
 		font-size: 1rem;
 	}
 

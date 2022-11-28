@@ -17,9 +17,9 @@
 	{#if open}
 		<div class="menu">
 			<a on:click={handleClick} href="/">Home</a>
-			<a on:click={handleClick} href="/ships">Ships</a>
 			<a on:click={handleClick} href="/missions">Missions</a>
 			<a on:click={handleClick} href="/roadster">Roadster</a>
+			<a on:click={handleClick} href="/ships">Ships</a>
 		</div>
 	{/if}
 
@@ -44,7 +44,7 @@
 		bottom: 0;
 		z-index: 9999;
 		padding: 2rem 4rem;
-		background-color: #000000;
+		background-color: #000000ee;
 		display: grid;
 		place-content: center;
 		font-size: 2.5rem;

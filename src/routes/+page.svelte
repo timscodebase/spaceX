@@ -5,16 +5,14 @@
 </script>
 
 <div class="page">
-	<img
-		src="https://res.cloudinary.com/tihos/image/upload/v1669412174/logo_y0u8lu.png"
-		alt="SpaceX Logo"
-	/>
-
-	<h2>SpaceX Customers</h2>
-	<div class="customers">
-		{#each customers as customer}
-			<span>{customer}</span>
-		{/each}
+	<div class="hero">
+		<h1>
+			<img
+				class="logo"
+				src="https://res.cloudinary.com/tihos/image/upload/f_auto,q_auto/v1669587361/logo-alpha_hikk5m.png"
+				alt="SpaceX Logo"
+			/> API Fun
+		</h1>
 	</div>
 
 	<article>
@@ -22,6 +20,13 @@
 		<img src={nextLaunch.links.mission_patch} alt="The patch of the next Mission" />
 		<p>{nextLaunch.details}</p>
 	</article>
+
+	<h2>SpaceX Customers</h2>
+	<div class="customers">
+		{#each customers as customer}
+			<span>{customer}</span>
+		{/each}
+	</div>
 </div>
 
 <style>
@@ -31,8 +36,30 @@
 		place-items: center;
 	}
 
+	.hero {
+		display: grid;
+		place-content: center;
+		width: 100%;
+		height: 550px;
+		background: linear-gradient(to bottom, #0000, #000 50%, #0000, #000),
+			url('https://res.cloudinary.com/tihos/image/upload/f_auto,q_auto/v1669586639/First-Humans-on-Mars-scaled_nimfzs.jpg');
+		background-size: cover;
+	}
+
+	h1 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
 	h2 {
 		text-align: center;
+	}
+
+	img {
+		display: block;
+		width: 400px;
+		margin: 0 auto;
 	}
 
 	article {

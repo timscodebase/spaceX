@@ -4,8 +4,8 @@ import type { PageServerLoad } from './$types';
 const query = gql`
   {
     launchesPast {
+      details
       mission_name
-      launch_date_local
       links {
         article_link
         video_link

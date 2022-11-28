@@ -16,7 +16,6 @@
   --background-grad: var(--bg-gradient), var(--bg-image);
 
   --padding: 2rem;
-
 }
 
 @media (max-width: 768px) {
@@ -28,6 +27,12 @@
 body {
   background: var(--background-grad) fixed;
   color: var(--white);
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 2rem;
 }
 
 p {
@@ -64,7 +69,7 @@ a:hover {
 
 .grid {
   max-width: 1200px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -75,4 +80,8 @@ img {
   width: 100%;
   margin: 0 auto;
   height: auto;
+}
+
+strong {
+  font-weight: bolder;
 }
