@@ -16,9 +16,6 @@
 
 	<div class="roadster">
 		<h2>{roadster.name}</h2>
-		<a href={roadster.wikipedia} target="_blank" rel="noopener noreferrer"
-			>Here is the Wikipedia link.</a
-		>
 		<div class="flex">
 			<button on:click={toggleMetric} class={metric ? 'active' : ''}>Metric</button>
 			<button on:click={toggleMetric} class={metric ? '' : 'active'}>Imperial</button>
@@ -57,7 +54,12 @@
 				</p>
 			</article>
 		</div>
-		<p>{roadster.details}</p>
+		<p>
+			{roadster.details}
+		</p>
+		<a href={roadster.wikipedia} target="_blank" rel="noopener noreferrer"
+			>Here is the Wikipedia link.</a
+		>
 	</div>
 </div>
 
@@ -83,7 +85,7 @@
 		background: #0005;
 		padding: var(--padding);
 		border-radius: 2rem;
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.85) inset, 0px 0px 40px 5px rgba(0, 0, 0, 0.85);
 	}
 
 	.grid {

@@ -2,6 +2,17 @@
 	import { onMount } from 'svelte';
 	import { Hamburger } from 'svelte-hamburgers';
 
+	onMount(() => {
+		const body = document.querySelector('body');
+		body?.addEventListener('mousemove', parallax);
+		function parallax(event) {
+			const x = (window.innerWidth + event.pageX) / 45;
+			const y = (window.innerHeight + event.pageY) / 45;
+
+			body.style.backgroundPosition = `${x}% ${y}%`;
+		}
+	});
+
 	let open: boolean = false;
 
 	const handleClick = () => {
@@ -20,6 +31,7 @@
 			<a on:click={handleClick} href="/missions">Missions</a>
 			<a on:click={handleClick} href="/roadster">Roadster</a>
 			<a on:click={handleClick} href="/ships">Ships</a>
+			<a on:click={handleClick} href="/history">History</a>
 		</div>
 	{/if}
 
@@ -33,7 +45,8 @@
 <style>
 	.wrapper {
 		position: relative;
-		widows: 100vw;
+		max-width: 1400px;
+		margin: 0 auto;
 	}
 
 	.menu {

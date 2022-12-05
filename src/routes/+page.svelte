@@ -1,7 +1,19 @@
 <script>
+	import { onMount } from 'svelte';
 	export let data;
 	$: nextLaunch = data.nextLaunch.launchNext;
 	$: customers = data.uniqueCustomers;
+
+	onMount(() => {
+		const hero = document.querySelector('.hero');
+		hero?.addEventListener('mousemove', parallax);
+		function parallax(event) {
+			const x = (window.innerWidth + event.pageX) / 45;
+			const y = (window.innerHeight + event.pageY) / 45;
+
+			hero.style.backgroundPosition = `${x}% ${y}%`;
+		}
+	});
 </script>
 
 <div class="page">
@@ -43,7 +55,9 @@
 		height: 550px;
 		background: linear-gradient(to bottom, #0000, #000 50%, #0000, #000),
 			url('https://res.cloudinary.com/tihos/image/upload/f_auto,q_auto/v1669586639/First-Humans-on-Mars-scaled_nimfzs.jpg');
-		background-size: cover;
+		background-size: 130%;
+		background-position: center;
+		box-shadow: 0px 0px 75px 10px rgba(0, 0, 0, 0.75) inset;
 	}
 
 	h1 {

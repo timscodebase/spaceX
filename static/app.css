@@ -27,6 +27,8 @@
 body {
   background: var(--background-grad) fixed;
   color: var(--white);
+  background-size: 130% 180%;
+  background-position: center;
 }
 
 h2 {

@@ -63,6 +63,7 @@
 		background: #0005;
 		padding: var(--padding);
 		border-radius: 1rem;
+		box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.85) inset, 0px 0px 40px 5px rgba(0, 0, 0, 0.85);
 	}
 
 	.flex {
